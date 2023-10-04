@@ -17,7 +17,7 @@ const WelcomeTemplate = ({ name }: { name: string }) => {
         <Body style={body}>
           <Container>
             <Text style={heading}>Hello {name}</Text>
-            <Link href="http://localhost:3000">Go to our website</Link>
+            <Link href={process.env.NEXTAUTH_URL}>Go to our website</Link>
           </Container>
         </Body>
       </Tailwind>
